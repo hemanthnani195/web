@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Hemanth Thota</h1>
+        <h2>Tip Calculator</h2>
+       
+        <form id="tipForm">
+            <div class="form-group">
+                <label for="billTotal">Bill Total:</label>
+                <input type="text" id="billSum" name="billTotal" required>
+            </div>
+            <div class="form-group">
+                <label for="tipPercentage">Tip Percentage:</label>
+                <input type="range" id="tipPercentage" name="tipPercentage" min="0" max="100" step="1">
+                <span id="percentage">0%</span>
+            </div>
+            <div class="form-group">
+                <label for="tipAmount">Tip Amount:</label>
+                <input type="text" id="tipAmount" name="tipAmount" disabled>
+            </div>
+            <div class="form-group">
+                <label for="totalBill">Total Bill with Tip:</label>
+                <input type="text" id="totalBill" name="totalBill" disabled>
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
